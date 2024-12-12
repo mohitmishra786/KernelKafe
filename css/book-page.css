@@ -1,49 +1,92 @@
-.breadcrumb {
-    margin-bottom: 2rem;
-}
+/* css/book-page.css */  
+.breadcrumb {  
+    margin-bottom: 2.5rem;  
+    color: var(--text-color);  
+    font-size: 0.9rem;  
+}  
 
-.breadcrumb a {
-    color: var(--text-color);
-    text-decoration: none;
-}
+.breadcrumb a {  
+    color: var(--text-color);  
+    text-decoration: none;  
+    transition: color 0.2s ease;  
+}  
 
-.breadcrumb a.active {
-    color: var(--secondary-color);
-}
+.breadcrumb a:hover {  
+    color: var(--secondary-color);  
+}  
 
-.book-content {
-    display: grid;
-    grid-template-columns: 300px 1fr;
-    gap: 2rem;
-}
+.breadcrumb a.active {  
+    color: var(--secondary-color);  
+}  
 
-.book-image img {
-    max-width: 100%;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
+.book-content {  
+    display: grid;  
+    grid-template-columns: 300px 1fr;  
+    gap: 3rem;  
+    margin-top: 2rem;  
+}  
 
-.quick-links {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1rem;
-    margin-bottom: 2rem;
-}
+.book-image img {  
+    max-width: 100%;  
+    border-radius: 8px;  
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);  
+}  
 
-.button {
-    display: inline-block;
-    padding: 0.5rem 1rem;
-    background-color: var(--secondary-color);
-    color: white;
-    text-decoration: none;
-    border-radius: 4px;
-    text-align: center;
-}
+.book-details {  
+    max-width: 800px;  
+}  
 
-.button:hover {
-    background-color: #2980b9;
-}
+.book-info {  
+    background-color: #f8f9fa;  
+    padding: 1.5rem;  
+    border-radius: 8px;  
+    margin-bottom: 2rem;  
+}  
 
-section {
-    margin-bottom: 2rem;
-}
+.chapters-list {  
+    margin-top: 2rem;  
+}  
+
+.chapter-item {  
+    padding: 1rem;  
+    border-bottom: 1px solid var(--border-color);  
+}  
+
+.chapter-item:last-child {  
+    border-bottom: none;  
+}  
+
+.chapter-title {  
+    font-weight: 600;  
+    margin-bottom: 0.5rem;  
+}  
+
+.chapter-pages {  
+    font-size: 0.9rem;  
+    color: #636e72;  
+}  
+
+.stats-container {  
+    display: grid;  
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));  
+    gap: 1rem;  
+    margin: 2rem 0;  
+}  
+
+.stat-card {  
+    background-color: #f8f9fa;  
+    padding: 1.5rem;  
+    border-radius: 8px;  
+    text-align: center;  
+}  
+
+.stat-number {  
+    font-size: 1.8rem;  
+    font-weight: 700;  
+    color: var(--secondary-color);  
+}  
+
+.stat-label {  
+    font-size: 0.9rem;  
+    color: #636e72;  
+}  
