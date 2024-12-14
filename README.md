@@ -1,6 +1,6 @@
 # KernelKafe ☕
 
-Welcome to KernelKafe - where system programming enthusiasts gather to explore the depths of computer architecture, operating systems, and low-level programming concepts!
+Welcome to KernelKafe - where we (system programming enthusiasts) gather to explore the depths of computer architecture, operating systems, and low-level programming concepts!
 
 ## 🌟 About KernelKafe
 
