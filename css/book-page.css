@@ -1,163 +1,187 @@
-/* css/book-page.css */  
-.page-layout {  
-    display: grid;  
-    grid-template-columns: 1fr 300px;  
-    gap: 2rem;  
-    margin-top: 2rem;  
-}  
+/* book-page.css */
+.content {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 2rem;
+}
 
-.breadcrumb {  
-    margin-bottom: 2rem;  
-    color: var(--text-color);  
-    font-size: 0.9rem;  
-}  
+.breadcrumb {
+    margin-bottom: 2rem;
+    font-size: 0.9rem;
+}
 
-.breadcrumb a {  
-    color: var(--text-color);  
-    text-decoration: none;  
-    transition: color 0.2s ease;  
-}  
+.breadcrumb a {
+    color: var(--text-color);
+    text-decoration: none;
+}
 
-.breadcrumb a:hover {  
-    color: var(--secondary-color);  
-}  
+.breadcrumb a:hover {
+    color: var(--secondary-color);
+}
 
-.book-content {  
-    display: grid;  
-    grid-template-columns: 400px 1fr;  
-    gap: 2rem;  
-}  
+.main-section {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
 
-.book-image img {  
-    width: 100%;  
-    border-radius: 8px;  
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);  
-}  
+.book-details {
+    flex: 2;
+    display: flex;
+    gap: 2rem;
+    background-color: #f8f9fa;
+    padding: 2rem;
+    border-radius: 12px;
+}
 
-.book-info {  
-    background-color: #f8f9fa;  
-    padding: 1.5rem;  
-    border-radius: 8px;  
-    margin-bottom: 2rem;  
-}  
+.book-image {
+    flex: 0 0 300px;
+}
 
-.book-stats {  
-    display: grid;  
-    grid-template-columns: repeat(3, 1fr);  
-    gap: 1rem;  
-    margin: 2rem 0;  
-}  
+.book-image img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
 
-.stat-card {  
-    background-color: white;  
-    padding: 1.5rem;  
-    border-radius: 8px;  
-    text-align: center;  
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);  
-}  
+.book-info {
+    flex: 1;
+}
 
-.stat-number {  
-    font-size: 1.8rem;  
-    font-weight: 700;  
-    color: var(--secondary-color);  
-}  
+.book-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin: 1.5rem 0;
+}
 
-.stat-label {  
-    font-size: 0.9rem;  
-    color: #636e72;  
-    margin-top: 0.5rem;  
-}  
+.stat-card {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
 
-.chapters-list {  
-    margin-top: 2rem;  
-}  
+.stat-number {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--secondary-color);
+}
 
-.chapter-item {  
-    padding: 1.5rem;  
-    border-bottom: 1px solid var(--border-color);  
-    transition: background-color 0.2s ease;  
-}  
+.stat-label {
+    font-size: 0.9rem;
+    color: #636e72;
+    margin-top: 0.5rem;
+}
 
-.chapter-item:hover {  
-    background-color: #f8f9fa;  
-}  
+.join-discussion {
+    flex: 1;
+}
 
-.chapter-item:last-child {  
-    border-bottom: none;  
-}  
+.join-card {
+    background-color: white;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
 
-.chapter-title {  
-    font-weight: 600;  
-    margin-bottom: 0.5rem;  
-    color: var(--primary-color);  
-}  
+.join-steps {
+    margin: 1.5rem 0;
+}
 
-.chapter-pages {  
-    font-size: 0.9rem;  
-    color: #636e72;  
-}  
+.step {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
 
-.join-sidebar {  
-    position: sticky;  
-    top: 2rem;  
-}  
+.step-number {
+    width: 28px;
+    height: 28px;
+    background-color: var(--secondary-color);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    margin-right: 1rem;
+}
 
-.join-card {  
-    background-color: white;  
-    border-radius: 30px;  
-    padding: 1.5rem; 
-    margin-top: 50px; 
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);  
-}  
+.join-note {
+    font-size: 0.9rem;
+    color: #636e72;
+    padding-top: 1rem;
+    border-top: 1px solid #eee;
+}
 
-.join-steps {  
-    margin: 1.5rem 0;  
-}  
+.chapters-section {
+    margin-top: 3rem;
+}
 
-.step {  
-    display: flex;  
-    align-items: center;  
-    margin-bottom: 1rem;  
-}  
+.chapters-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
 
-.step-number {  
-    width: 28px;  
-    height: 28px;  
-    background-color: var(--secondary-color);  
-    color: white;  
-    border-radius: 50%;  
-    display: flex;  
-    align-items: center;  
-    justify-content: center;  
-    font-weight: 600;  
-    margin-right: 1rem;  
-}  
+.chapter-item {
+    background-color: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    transition: transform 0.2s;
+}
 
-.join-note {  
-    font-size: 0.9rem;  
-    color: #636e72;  
-    padding-top: 1rem;  
-    border-top: 1px solid #eee;  
-}  
+.chapter-item:hover {
+    transform: translateY(-2px);
+}
 
-@media (max-width: 1200px) {  
-    .page-layout {  
-        grid-template-columns: 1fr;  
-    }  
+.chapter-title {
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
 
-    .join-sidebar {  
-        position: static;  
-        margin-top: 2rem;  
-    }  
-}  
+.chapter-pages {
+    font-size: 0.9rem;
+    color: #636e72;
+}
 
-@media (max-width: 768px) {  
-    .book-content {  
-        grid-template-columns: 1fr;  
-    }  
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .main-section {
+        flex-direction: column;
+    }
+    
+    .join-discussion {
+        max-width: 100%;
+    }
+}
 
-    .book-image {  
-        max-width: 300px;  
-        margin: 0 auto;  
-    }  
-}  
+@media (max-width: 900px) {
+    .book-details {
+        flex-direction: column;
+    }
+    
+    .book-image {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+    
+    .chapters-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .content {
+        padding: 1rem;
+    }
+    
+    .book-stats {
+        grid-template-columns: 1fr;
+    }
+}
